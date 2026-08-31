@@ -7,3 +7,4 @@ dist-ssr
 npm-debug.log*
 
 docs-dist
+TUTORIAL.md

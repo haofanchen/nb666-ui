@@ -38,7 +38,7 @@ export interface TableProps<T = Record<string, unknown>> extends Omit<React.HTML
   rowSelection?: TableRowSelection<T>
 }
 
-export function Table<T extends Record<string, unknown>>({
+export function Table<T>({
   columns,
   dataSource,
   rowKey = "key",
@@ -63,7 +63,7 @@ export function Table<T extends Record<string, unknown>>({
 
   function getRowKey(record: T, index: number): string | number {
     if (typeof rowKey === "function") return rowKey(record)
-    return (record[rowKey] as string | number | undefined) ?? index
+    return ((record as Record<string, unknown>)[rowKey] as string | number | undefined) ?? index
   }
 
   function updateSelected(next: (string | number)[]) {
@@ -183,7 +183,7 @@ export function Table<T extends Record<string, unknown>>({
                     </td>
                   )}
                   {columns.map((col, j) => {
-                    const value = col.dataIndex ? record[col.dataIndex] : undefined
+                    const value = col.dataIndex ? (record as Record<string, unknown>)[col.dataIndex] : undefined
                     return (
                       <td
                         key={col.key ?? col.dataIndex ?? j}
