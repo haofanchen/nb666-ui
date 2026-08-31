@@ -359,7 +359,7 @@ export default function Demo() {
         这是次级段落文本，用于展示辅助说明信息，颜色比正文更柔和。
       </Paragraph>
       <Paragraph>
-        访问 <Link href="https://github.com">GitHub</Link> 获取更多示例与源码。
+        访问 <Link href="https://github.com/haofanchen/aurora-ui">GitHub</Link> 获取更多示例与源码。
       </Paragraph>
     </div>
   )
@@ -373,7 +373,7 @@ export default function Demo() {
               这是次级段落文本，用于展示辅助说明信息，颜色比正文更柔和。
             </Paragraph>
             <Paragraph>
-              访问 <Link href="https://github.com">GitHub</Link> 获取更多示例与源码。
+              访问 <Link href="https://github.com/haofanchen/aurora-ui">GitHub</Link> 获取更多示例与源码。
             </Paragraph>
           </div>
         ),

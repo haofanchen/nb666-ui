@@ -4,7 +4,7 @@ export const meta = {
   slogan: "优雅、现代的 React 组件库",
   description: "Aurora UI 是一套面向企业级中后台产品的 React 组件库，提供一致的设计语言、丰富的组件与完善的文档。",
   version: "1.0.0",
-  repo: "https://github.com/aurora-ui/aurora-ui",
+  repo: "https://github.com/haofanchen/aurora-ui",
 }
 
 export const categories = [
