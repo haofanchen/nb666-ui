@@ -1,11 +1,11 @@
-# Aurora UI
+# NB666 UI
 
-Aurora UI 是一套面向企业级中后台产品的 React 组件库，提供一致的设计语言、丰富的组件与类 Ant Design 的文档站。
+NB666 UI 是一套面向企业级中后台产品的 React 组件库，提供一致的设计语言、丰富的组件与类 Ant Design 的文档站。
 
 ## 链接
 
-- GitHub 仓库：https://github.com/haofanchen/aurora-ui
-- 在线文档：https://haofanchen.github.io/aurora-ui/
+- GitHub 仓库：https://github.com/haofanchen/nb666-ui
+- 在线文档：https://haofanchen.github.io/nb666-ui/
 
 ## 技术栈
 
@@ -20,18 +20,18 @@ Aurora UI 是一套面向企业级中后台产品的 React 组件库，提供一
 - 紫色系品牌主色 + 亮/暗双主题
 - 70+ 组件，覆盖通用、布局、导航、数据录入、数据展示、反馈六大类
 - 类 Ant Design 的文档站：实时示例、代码演示、引用方式、API 表格
-- `aurora-ui` 具名导出，支持 Tree Shaking
-- 内置 `unplugin-auto-import` 的 `AuroraUIResolver`，可自动按需引入
+- `nb666-ui` 具名导出，支持 Tree Shaking
+- 内置 `unplugin-auto-import` 的 `NB666UIResolver`，可自动按需引入
 
 ## 安装使用
 
 ```bash
-npm install aurora-ui
+npm install nb666-ui
 ```
 
 ```tsx
-import { Button } from "aurora-ui"
-import "aurora-ui/styles.css"
+import { Button } from "nb666-ui"
+import "nb666-ui/styles.css"
 
 export default function App() {
   return <Button type="primary">按钮</Button>
@@ -74,7 +74,7 @@ npm run preview    # 预览文档站生产构建
 
 ```text
 src/
-├── components/ui/      # 组件库（aurora-ui 入口 index.ts）
+├── components/ui/      # 组件库（nb666-ui 入口 index.ts）
 ├── docs/               # 文档站
 │   ├── components/     # CodeBlock / DemoBox / ApiTable / highlight
 │   ├── layout/         # 侧边栏 + 顶栏布局
@@ -89,9 +89,9 @@ src/
 
 ## 引用方式
 
-组件通过 `aurora-ui` 具名导出：
+组件通过 `nb666-ui` 具名导出：
 
 ```tsx
-import { Button, Table, Modal } from "aurora-ui"
-import { message } from "aurora-ui"
+import { Button, Table, Modal } from "nb666-ui"
+import { message } from "nb666-ui"
 ```

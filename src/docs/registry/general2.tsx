@@ -1,4 +1,4 @@
-import { FloatButton, Icon } from "aurora-ui"
+import { FloatButton, Icon } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 export const generalComponents2: ComponentDoc[] = [
@@ -9,13 +9,13 @@ export const generalComponents2: ComponentDoc[] = [
     description: "悬浮于页面右下角的操作按钮，用于提供快捷操作入口。",
     categoryKey: "general",
     whenToUse: "当需要提供全局快捷操作（如回到顶部、发起会话）时使用。",
-    importCode: `import { FloatButton } from "aurora-ui"`,
+    importCode: `import { FloatButton } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "默认为 fixed 定位在页面右下角；示例中改为 static 以便在文档内展示。",
-        code: `import { FloatButton, Icon, Space } from "aurora-ui"
+        code: `import { FloatButton, Icon, Space } from "nb666-ui"
 
 export default function Demo() {
   return (

@@ -1,4 +1,4 @@
-import { Button, Col, Divider, Row, Space } from "aurora-ui"
+import { Button, Col, Divider, Row, Space } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 export const layoutComponents: ComponentDoc[] = [
@@ -9,13 +9,13 @@ export const layoutComponents: ComponentDoc[] = [
     description: "设置组件之间的间距，避免重复书写 margin。",
     categoryKey: "layout",
     whenToUse: "当多个组件需要水平或垂直排列并保持统一间距时使用。",
-    importCode: `import { Space } from "aurora-ui"`,
+    importCode: `import { Space } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "相邻组件水平间距。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -38,7 +38,7 @@ export default function Demo() {
         id: "vertical",
         title: "垂直排列",
         description: "设置 direction 为 vertical 可垂直排列，size 控制间距大小。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -61,7 +61,7 @@ export default function Demo() {
         id: "compact",
         title: "紧凑组合",
         description: "Space.Compact 将相邻控件拼接为一个整体。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -84,7 +84,7 @@ export default function Demo() {
         id: "split",
         title: "分割符",
         description: "split 属性在相邻元素间插入分割符。",
-        code: `import { Button, Divider, Space } from "aurora-ui"
+        code: `import { Button, Divider, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -119,13 +119,13 @@ export default function Demo() {
     description: "区隔内容的分割线，支持水平与垂直方向。",
     categoryKey: "layout",
     whenToUse: "当需要对不同内容进行分组或分隔时使用。",
-    importCode: `import { Divider } from "aurora-ui"`,
+    importCode: `import { Divider } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "默认为水平分割线，可插入文字。",
-        code: `import { Divider } from "aurora-ui"
+        code: `import { Divider } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -152,7 +152,7 @@ export default function Demo() {
         id: "dashed",
         title: "虚线样式",
         description: "dashed 属性切换为虚线，orientation 控制文字位置。",
-        code: `import { Divider } from "aurora-ui"
+        code: `import { Divider } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -175,7 +175,7 @@ export default function Demo() {
         id: "vertical",
         title: "垂直分割线",
         description: "设置 type 为 vertical 使用垂直分割线。",
-        code: `import { Divider } from "aurora-ui"
+        code: `import { Divider } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -213,13 +213,13 @@ export default function Demo() {
     description: "24 栅格系统，通过 Row 与 Col 构建响应式布局。",
     categoryKey: "layout",
     whenToUse: "当需要按栅格排列内容并支持响应式时使用。",
-    importCode: `import { Row, Col } from "aurora-ui"`,
+    importCode: `import { Row, Col } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础栅格",
         description: "Col 的 span 范围为 1-24，共 24 等份。",
-        code: `import { Col, Row } from "aurora-ui"
+        code: `import { Col, Row } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -246,7 +246,7 @@ export default function Demo() {
         id: "offset",
         title: "列偏移",
         description: "offset 属性让列向右偏移指定份数。",
-        code: `import { Col, Row } from "aurora-ui"
+        code: `import { Col, Row } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -267,7 +267,7 @@ export default function Demo() {
         id: "responsive",
         title: "响应式栅格",
         description: "通过 xs / sm / md / lg / xl 在不同断点下调整列宽。",
-        code: `import { Col, Row } from "aurora-ui"
+        code: `import { Col, Row } from "nb666-ui"
 
 export default function Demo() {
   return (

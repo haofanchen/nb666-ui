@@ -1,4 +1,4 @@
-import { AutoComplete, Button, Cascader, ColorPicker, DatePicker, Form, FormItem, Input, InputNumber, Mentions, message, RangePicker, Rate, Segmented, Select, Space, TextArea, TimePicker, Transfer, TreeSelect, Upload } from "aurora-ui"
+import { AutoComplete, Button, Cascader, ColorPicker, DatePicker, Form, FormItem, Input, InputNumber, Mentions, message, RangePicker, Rate, Segmented, Select, Space, TextArea, TimePicker, Transfer, TreeSelect, Upload } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 function FormInstanceDemo() {
@@ -14,7 +14,7 @@ function FormInstanceDemo() {
         </FormItem>
       </Form>
       <Space>
-        <Button onClick={() => form.setFieldsValue({ username: "Aurora", email: "hi@aurora.ui" })}>赋值</Button>
+        <Button onClick={() => form.setFieldsValue({ username: "NB666", email: "hi@nb666.ui" })}>赋值</Button>
         <Button onClick={() => message.info(JSON.stringify(form.getFieldsValue()))}>取值</Button>
         <Button onClick={() => form.resetFields()}>重置</Button>
       </Space>
@@ -81,13 +81,13 @@ export const dataEntryComponents2: ComponentDoc[] = [
     description: "高性能表单容器，配合 Form.Item 提供标签、校验与布局。",
     categoryKey: "data-entry",
     whenToUse: "当需要收集、校验并提交用户输入时使用。",
-    importCode: `import { Form, FormItem } from "aurora-ui"`,
+    importCode: `import { Form, FormItem } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "Form 收集字段值，Form.Item 配置校验规则，提交时统一校验。",
-        code: `import { Button, Form, FormItem, Input, InputNumber, message } from "aurora-ui"
+        code: `import { Button, Form, FormItem, Input, InputNumber, message } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -148,7 +148,7 @@ export default function Demo() {
         id: "layout",
         title: "布局",
         description: "支持 vertical、horizontal、inline 三种布局。",
-        code: `import { Form, FormItem, Input } from "aurora-ui"
+        code: `import { Form, FormItem, Input } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -177,7 +177,7 @@ export default function Demo() {
         id: "instance",
         title: "表单实例",
         description: "useForm 提供赋值、取值、重置与校验等命令式方法。",
-        code: `import { Button, Form, FormItem, Input, message, Space } from "aurora-ui"
+        code: `import { Button, Form, FormItem, Input, message, Space } from "nb666-ui"
 
 export default function Demo() {
   const [form] = Form.useForm()
@@ -192,7 +192,7 @@ export default function Demo() {
         </FormItem>
       </Form>
       <Space>
-        <Button onClick={() => form.setFieldsValue({ username: "Aurora", email: "hi@aurora.ui" })}>赋值</Button>
+        <Button onClick={() => form.setFieldsValue({ username: "NB666", email: "hi@nb666.ui" })}>赋值</Button>
         <Button onClick={() => message.info(JSON.stringify(form.getFieldsValue()))}>取值</Button>
         <Button onClick={() => form.resetFields()}>重置</Button>
       </Space>
@@ -205,7 +205,7 @@ export default function Demo() {
         id: "linkage",
         title: "字段联动",
         description: "useWatch 监听字段值，实现跨字段显隐联动。",
-        code: `import { Form, FormItem, Input, Select } from "aurora-ui"
+        code: `import { Form, FormItem, Input, Select } from "nb666-ui"
 
 export default function Demo() {
   const [form] = Form.useForm()
@@ -229,7 +229,7 @@ export default function Demo() {
         id: "list",
         title: "动态列表",
         description: "Form.List 支持动态增删行，字段名使用数组路径。",
-        code: `import { Button, Form, FormItem, Input, InputNumber } from "aurora-ui"
+        code: `import { Button, Form, FormItem, Input, InputNumber } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -289,13 +289,13 @@ export default function Demo() {
     description: "用于对事物进行星级评分。",
     categoryKey: "data-entry",
     whenToUse: "当需要用户对内容进行评分时使用。",
-    importCode: `import { Rate } from "aurora-ui"`,
+    importCode: `import { Rate } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击星星进行评分，再次点击可清除。",
-        code: `import { Rate, Space } from "aurora-ui"
+        code: `import { Rate, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -316,7 +316,7 @@ export default function Demo() {
         id: "half",
         title: "半星评分",
         description: "allowHalf 支持半星，鼠标悬停与点击按半星计算。",
-        code: `import { Rate } from "aurora-ui"
+        code: `import { Rate } from "nb666-ui"
 
 export default function Demo() {
   return <Rate allowHalf defaultValue={2.5} onChange={(v) => console.log(v)} />
@@ -341,13 +341,13 @@ export default function Demo() {
     description: "用于在多个选项间切换，通常展示单选视图。",
     categoryKey: "data-entry",
     whenToUse: "当需要在少量选项间快速切换时使用。",
-    importCode: `import { Segmented } from "aurora-ui"`,
+    importCode: `import { Segmented } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 options 配置选项，value 控制选中项。",
-        code: `import { Segmented } from "aurora-ui"
+        code: `import { Segmented } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -378,7 +378,7 @@ export default function Demo() {
         id: "size",
         title: "尺寸与块级",
         description: "支持三种尺寸，block 撑满父容器。",
-        code: `import { Segmented } from "aurora-ui"
+        code: `import { Segmented } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -414,13 +414,13 @@ export default function Demo() {
     description: "文件选择与上传入口，支持多文件与数量限制。",
     categoryKey: "data-entry",
     whenToUse: "当需要用户选择或上传文件时使用。",
-    importCode: `import { Upload } from "aurora-ui"`,
+    importCode: `import { Upload } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击选择文件，支持多选与最大数量限制。",
-        code: `import { Upload } from "aurora-ui"
+        code: `import { Upload } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -440,7 +440,7 @@ export default function Demo() {
         id: "drag",
         title: "拖拽上传",
         description: "drag 支持拖拽文件到上传区域。",
-        code: `import { Upload } from "aurora-ui"
+        code: `import { Upload } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -474,13 +474,13 @@ export default function Demo() {
     description: "输入时自动补全的输入框。",
     categoryKey: "data-entry",
     whenToUse: "当需要根据输入内容联想并快速选择时使用。",
-    importCode: `import { AutoComplete } from "aurora-ui"`,
+    importCode: `import { AutoComplete } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "输入关键字后在下拉列表中过滤匹配项。",
-        code: `import { AutoComplete } from "aurora-ui"
+        code: `import { AutoComplete } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -516,13 +516,13 @@ export default function Demo() {
     description: "用于选择颜色，展示所选颜色值。",
     categoryKey: "data-entry",
     whenToUse: "当需要让用户选择颜色时使用。",
-    importCode: `import { ColorPicker } from "aurora-ui"`,
+    importCode: `import { ColorPicker } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击色块选择颜色，onChange 返回十六进制色值。",
-        code: `import { ColorPicker } from "aurora-ui"
+        code: `import { ColorPicker } from "nb666-ui"
 
 export default function Demo() {
   return <ColorPicker defaultValue="#6c5ce7" onChange={(v) => console.log(v)} />
@@ -545,13 +545,13 @@ export default function Demo() {
     description: "选择日期，返回 ISO 格式日期字符串。",
     categoryKey: "data-entry",
     whenToUse: "当需要选择单个日期时使用。",
-    importCode: `import { DatePicker } from "aurora-ui"`,
+    importCode: `import { DatePicker } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击打开日历面板，支持月份与年份视图切换。",
-        code: `import { DatePicker, Space } from "aurora-ui"
+        code: `import { DatePicker, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -572,7 +572,7 @@ export default function Demo() {
         id: "disabled-date",
         title: "禁用日期",
         description: "通过 disabledDate 禁用特定日期，这里禁用了周末。",
-        code: `import { DatePicker } from "aurora-ui"
+        code: `import { DatePicker } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -611,13 +611,13 @@ export default function Demo() {
     description: "用于多行文本输入，支持字数统计与校验状态。",
     categoryKey: "data-entry",
     whenToUse: "当需要输入较长的多行文本（如备注、描述）时使用。",
-    importCode: `import { TextArea } from "aurora-ui"`,
+    importCode: `import { TextArea } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持多行输入、尺寸与字数统计。",
-        code: `import { TextArea } from "aurora-ui"
+        code: `import { TextArea } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -650,13 +650,13 @@ export default function Demo() {
     description: "用于选择小时、分钟与秒，支持清空与快捷选择当前时间。",
     categoryKey: "data-entry",
     whenToUse: "当需要精确录入一天中的某个时刻时使用。",
-    importCode: `import { TimePicker } from "aurora-ui"`,
+    importCode: `import { TimePicker } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击展开时间面板，选择后通过 onChange 返回格式化字符串。",
-        code: `import { Space, TimePicker } from "aurora-ui"
+        code: `import { Space, TimePicker } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -689,7 +689,7 @@ export default function Demo() {
         id: "clear",
         title: "清空与禁用",
         description: "allowClear 支持清空，disabled 禁用选择。",
-        code: `import { Space, TimePicker } from "aurora-ui"
+        code: `import { Space, TimePicker } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -725,13 +725,13 @@ export default function Demo() {
     description: "在左右两栏之间移动数据，常用于权限或成员分配。",
     categoryKey: "data-entry",
     whenToUse: "当需要从一组候选项中挑选多项并调整归属时使用。",
-    importCode: `import { Transfer } from "aurora-ui"`,
+    importCode: `import { Transfer } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 targetKeys 或 defaultTargetKeys 控制右侧数据。",
-        code: `import { Transfer } from "aurora-ui"
+        code: `import { Transfer } from "nb666-ui"
 
 const data = [
   { key: "1", title: "张三" },
@@ -768,7 +768,7 @@ export default function Demo() {
         id: "search",
         title: "带搜索",
         description: "showSearch 在两栏中提供搜索过滤。",
-        code: `import { Transfer } from "aurora-ui"
+        code: `import { Transfer } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -820,13 +820,13 @@ export default function Demo() {
     description: "在树形结构中单选或多选值，适合选择层级化数据。",
     categoryKey: "data-entry",
     whenToUse: "当选项具有父子层级关系、需要按树选择时使用。",
-    importCode: `import { TreeSelect } from "aurora-ui"`,
+    importCode: `import { TreeSelect } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "默认单选，选中后关闭下拉面板。",
-        code: `import { TreeSelect } from "aurora-ui"
+        code: `import { TreeSelect } from "nb666-ui"
 
 const data = [
   { key: "1", title: "公司", children: [
@@ -865,7 +865,7 @@ export default function Demo() {
         id: "multiple",
         title: "多选与可勾选",
         description: "multiple 支持多选，treeCheckable 启用树勾选。",
-        code: `import { Space, TreeSelect } from "aurora-ui"
+        code: `import { Space, TreeSelect } from "nb666-ui"
 
 const data = [
   { key: "1", title: "公司", children: [
@@ -923,13 +923,13 @@ export default function Demo() {
     description: "选择一段起止日期，支持双月面板、区间高亮与禁用日期。",
     categoryKey: "data-entry",
     whenToUse: "当需要录入一个时间范围（如活动周期、预订区间）时使用。",
-    importCode: `import { RangePicker } from "aurora-ui"`,
+    importCode: `import { RangePicker } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "先后选择开始与结束日期，onChange 返回完整区间。",
-        code: `import { RangePicker } from "aurora-ui"
+        code: `import { RangePicker } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -952,7 +952,7 @@ export default function Demo() {
         id: "disabled",
         title: "禁用日期",
         description: "disabledDate 可禁止选择指定日期。",
-        code: `import { RangePicker } from "aurora-ui"
+        code: `import { RangePicker } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -990,13 +990,13 @@ export default function Demo() {
     description: "在多级选项中选择一个完整路径，支持点击或悬停展开。",
     categoryKey: "data-entry",
     whenToUse: "当选项具有明确的层级关系（如省市区、分类）时使用。",
-    importCode: `import { Cascader } from "aurora-ui"`,
+    importCode: `import { Cascader } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "默认点击展开，选中叶子节点后关闭并返回路径。",
-        code: `import { Cascader } from "aurora-ui"
+        code: `import { Cascader } from "nb666-ui"
 
 const options = [
   { value: "zhejiang", label: "浙江", children: [
@@ -1047,7 +1047,7 @@ export default function Demo() {
         id: "hover",
         title: "悬停展开",
         description: "expandTrigger 为 hover 时，鼠标悬停即可展开下一级。",
-        code: `import { Cascader } from "aurora-ui"
+        code: `import { Cascader } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -1093,13 +1093,13 @@ export default function Demo() {
     description: "输入 @ 触发候选列表，快速提及用户或对象。",
     categoryKey: "data-entry",
     whenToUse: "当需要在文本中通过 @ 提及用户、标签等对象时使用。",
-    importCode: `import { Mentions } from "aurora-ui"`,
+    importCode: `import { Mentions } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "输入 @ 后从下拉列表中选择，自动拼接提及内容。",
-        code: `import { Mentions } from "aurora-ui"
+        code: `import { Mentions } from "nb666-ui"
 
 const users = ["张三", "李四", "王五", "赵六", "钱七"]
 
@@ -1124,7 +1124,7 @@ export default function Demo() {
         id: "object",
         title: "对象选项",
         description: "options 支持对象，label 用于展示，value 用于标识。",
-        code: `import { Mentions } from "aurora-ui"
+        code: `import { Mentions } from "nb666-ui"
 
 export default function Demo() {
   return (

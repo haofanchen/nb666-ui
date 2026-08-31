@@ -1,4 +1,4 @@
-import { Alert, Divider, Space, Typography } from "aurora-ui"
+import { Alert, Divider, Space, Typography } from "nb666-ui"
 import { CodeBlock } from "../components/CodeBlock"
 
 const { Title, Paragraph, Text } = Typography
@@ -43,12 +43,12 @@ const registryCode = `// src/docs/registry/data-display.tsx
   title: "徽标 Badge",
   description: "用于展示消息数量或状态的小徽标。",
   categoryKey: "data-display",
-  importCode: \`import { Badge } from "aurora-ui"\`,
+  importCode: \`import { Badge } from "nb666-ui"\`,
   demos: [
     {
       id: "basic",
       title: "基础用法",
-      code: \`import { Badge } from "aurora-ui"
+      code: \`import { Badge } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -90,7 +90,7 @@ export function AddComponentPage() {
       <section>
         <Title level={1}>新增组件</Title>
         <Paragraph type="secondary">
-          本文以添加一个简化的 <Text code>Badge</Text> 为例，完整演示如何为 Aurora UI 新增组件。整个过程遵循「实现 → 导出 → 文档 → 验证」四步。
+          本文以添加一个简化的 <Text code>Badge</Text> 为例，完整演示如何为 NB666 UI 新增组件。整个过程遵循「实现 → 导出 → 文档 → 验证」四步。
         </Paragraph>
       </section>
 
@@ -118,7 +118,7 @@ export function AddComponentPage() {
       <section className="space-y-3">
         <Title level={2}>2. 导出组件</Title>
         <Paragraph>
-          在 <Text code>src/components/ui/index.ts</Text> 的对应分类下补充 value 与 type 导出，即可通过 <Text code>aurora-ui</Text> 别名按需引入。
+          在 <Text code>src/components/ui/index.ts</Text> 的对应分类下补充 value 与 type 导出，即可通过 <Text code>nb666-ui</Text> 别名按需引入。
         </Paragraph>
         <CodeBlock code={exportCode} />
       </section>

@@ -1,4 +1,4 @@
-import { Button, Flex, Header, Content, Footer, Layout, Sider } from "aurora-ui"
+import { Button, Flex, Header, Content, Footer, Layout, Sider } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 export const layoutComponents2: ComponentDoc[] = [
@@ -9,13 +9,13 @@ export const layoutComponents2: ComponentDoc[] = [
     description: "页面级整体布局，包含 Header、Sider、Content、Footer 等子组件。",
     categoryKey: "layout",
     whenToUse: "当需要搭建整体页面框架（顶栏、侧栏、内容、页脚）时使用。",
-    importCode: `import { Layout, Header, Sider, Content, Footer } from "aurora-ui"`,
+    importCode: `import { Layout, Header, Sider, Content, Footer } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础结构",
         description: "组合 Header、Sider、Content、Footer 构建经典后台布局。",
-        code: `import { Content, Footer, Header, Layout, Sider } from "aurora-ui"
+        code: `import { Content, Footer, Header, Layout, Sider } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -56,13 +56,13 @@ export default function Demo() {
     description: "基于 Flexbox 的布局容器，提供更语义化的对齐与间距。",
     categoryKey: "layout",
     whenToUse: "当需要灵活排列元素并控制对齐与间距时使用。",
-    importCode: `import { Flex } from "aurora-ui"`,
+    importCode: `import { Flex } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持水平/垂直排列、间距、对齐与换行。",
-        code: `import { Button, Flex } from "aurora-ui"
+        code: `import { Button, Flex } from "nb666-ui"
 
 export default function Demo() {
   return (

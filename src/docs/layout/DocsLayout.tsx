@@ -4,7 +4,7 @@ import { Boxes, Compass, Eye, Github, LayoutGrid, Menu as MenuIcon, MessageSquar
 import { cn } from "@/lib/utils"
 import { categories, meta } from "../data/meta"
 import { allComponents } from "../registry"
-import { MessageHolder, ModalHolder, NotificationHolder } from "aurora-ui"
+import { MessageHolder, ModalHolder, NotificationHolder } from "nb666-ui"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const categoryIcons: Record<string, React.ReactNode> = {

@@ -1,4 +1,4 @@
-// Aurora UI 统一导出入口。
+// NB666 UI 统一导出入口。
 // 新增组件后，按对应分类补充 value + type 导出即可。
 
 // 通用 General
@@ -221,5 +221,5 @@ export { Tour } from "./tour"
 export type { TourProps, TourStep } from "./tour"
 
 // 自动导入工具
-export { AuroraUIResolver, auroraComponentNames } from "./resolver"
-export type { AuroraAutoImportResolver } from "./resolver"
+export { NB666UIResolver, nb666ComponentNames } from "./resolver"
+export type { NB666AutoImportResolver } from "./resolver"

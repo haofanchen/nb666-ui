@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button, Calendar, Carousel, Countdown, Descriptions, Image, InfiniteScroll, List, Popover, Skeleton, Sortable, Space, Statistic, Timeline, Tree, Watermark } from "aurora-ui"
+import { Button, Calendar, Carousel, Countdown, Descriptions, Image, InfiniteScroll, List, Popover, Skeleton, Sortable, Space, Statistic, Timeline, Tree, Watermark } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 const treeData = [
@@ -61,13 +61,13 @@ export const dataDisplayComponents2: ComponentDoc[] = [
     description: "突出展示统计数值，支持前缀、后缀与精度。",
     categoryKey: "data-display",
     whenToUse: "当需要在仪表盘突出展示关键指标时使用。",
-    importCode: `import { Statistic } from "aurora-ui"`,
+    importCode: `import { Statistic } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "展示标题与数值，支持前缀、后缀与精度。",
-        code: `import { Space, Statistic } from "aurora-ui"
+        code: `import { Space, Statistic } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -103,13 +103,13 @@ export default function Demo() {
     description: "按时间顺序展示一系列信息。",
     categoryKey: "data-display",
     whenToUse: "当需要展示按时间推进的事件流时使用。",
-    importCode: `import { Timeline } from "aurora-ui"`,
+    importCode: `import { Timeline } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "每个 item 表示一个时间节点。",
-        code: `import { Timeline } from "aurora-ui"
+        code: `import { Timeline } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -148,13 +148,13 @@ export default function Demo() {
     description: "成组展示只读字段信息。",
     categoryKey: "data-display",
     whenToUse: "当需要以标签-值形式展示详情信息时使用。",
-    importCode: `import { Descriptions } from "aurora-ui"`,
+    importCode: `import { Descriptions } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 column 控制列数，span 控制单个字段跨度。",
-        code: `import { Descriptions } from "aurora-ui"
+        code: `import { Descriptions } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -202,13 +202,13 @@ export default function Demo() {
     description: "通用列表，用于展示一组数据。",
     categoryKey: "data-display",
     whenToUse: "当需要展示一组结构相似的数据时使用。",
-    importCode: `import { List } from "aurora-ui"`,
+    importCode: `import { List } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 dataSource 与 renderItem 渲染列表。",
-        code: `import { List } from "aurora-ui"
+        code: `import { List } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -247,13 +247,13 @@ export default function Demo() {
     description: "点击或悬停元素时弹出的卡片容器。",
     categoryKey: "data-display",
     whenToUse: "当需要展示比 Tooltip 更丰富的内容时使用。",
-    importCode: `import { Popover } from "aurora-ui"`,
+    importCode: `import { Popover } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持标题与内容，点击触发。",
-        code: `import { Button, Popover, Space } from "aurora-ui"
+        code: `import { Button, Popover, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -294,13 +294,13 @@ export default function Demo() {
     description: "旋转木马，用于展示一组轮播内容。",
     categoryKey: "data-display",
     whenToUse: "当需要轮播展示图片或内容时使用。",
-    importCode: `import { Carousel } from "aurora-ui"`,
+    importCode: `import { Carousel } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持自动播放、指示点与切换箭头。",
-        code: `import { Carousel } from "aurora-ui"
+        code: `import { Carousel } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -335,19 +335,19 @@ export default function Demo() {
     description: "可预览的图片组件，支持占位与加载失败兜底。",
     categoryKey: "data-display",
     whenToUse: "当需要展示图片并支持点击预览时使用。",
-    importCode: `import { Image } from "aurora-ui"`,
+    importCode: `import { Image } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击图片可全屏预览。",
-        code: `import { Image } from "aurora-ui"
+        code: `import { Image } from "nb666-ui"
 
 export default function Demo() {
   return (
     <Image
       width={320}
-      src="https://picsum.photos/seed/aurora/640/360"
+      src="https://picsum.photos/seed/nb666/640/360"
       alt="示例图片"
     />
   )
@@ -355,7 +355,7 @@ export default function Demo() {
         element: (
           <Image
             width={320}
-            src="https://picsum.photos/seed/aurora/640/360"
+            src="https://picsum.photos/seed/nb666/640/360"
             alt="示例图片"
           />
         ),
@@ -376,13 +376,13 @@ export default function Demo() {
     description: "在数据加载前展示占位骨架。",
     categoryKey: "data-display",
     whenToUse: "当内容加载需要等待时，用骨架屏代替空白。",
-    importCode: `import { Skeleton } from "aurora-ui"`,
+    importCode: `import { Skeleton } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持头像、标题与段落占位。",
-        code: `import { Skeleton } from "aurora-ui"
+        code: `import { Skeleton } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -415,13 +415,13 @@ export default function Demo() {
     description: "层级结构数据的展示与操作，支持展开、选中、勾选与连接线。",
     categoryKey: "data-display",
     whenToUse: "当需要展示具有层级关系的数据（如目录、组织架构）时使用。",
-    importCode: `import { Tree } from "aurora-ui"`,
+    importCode: `import { Tree } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击箭头展开/折叠，点击标题选中节点。",
-        code: `import { Tree } from "aurora-ui"
+        code: `import { Tree } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -462,7 +462,7 @@ export default function Demo() {
         id: "checkable",
         title: "可勾选",
         description: "checkable 开启勾选，父子节点联动并显示半选状态。",
-        code: `import { Tree } from "aurora-ui"
+        code: `import { Tree } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -497,7 +497,7 @@ export default function Demo() {
         id: "multiple",
         title: "多选",
         description: "multiple 开启多选，点击节点可追加或取消选中。",
-        code: `import { Tree } from "aurora-ui"
+        code: `import { Tree } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -532,7 +532,7 @@ export default function Demo() {
         id: "line",
         title: "连接线",
         description: "showLine 显示层级之间的连接线。",
-        code: `import { Tree } from "aurora-ui"
+        code: `import { Tree } from "nb666-ui"
 
 export default function Demo() {
   return <Tree showLine defaultExpandAll treeData={treeData} />
@@ -563,13 +563,13 @@ export default function Demo() {
     description: "以日历形式展示日期，可选中日期并自定义单元格内容。",
     categoryKey: "data-display",
     whenToUse: "当需要以月视图呈现日期、并展示每天的相关信息时使用。",
-    importCode: `import { Calendar } from "aurora-ui"`,
+    importCode: `import { Calendar } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "点击日期触发 onChange，今天与选中日期会高亮。",
-        code: `import { Calendar } from "aurora-ui"
+        code: `import { Calendar } from "nb666-ui"
 
 export default function Demo() {
   return <Calendar defaultValue={new Date()} onChange={(date) => console.log(date)} />
@@ -580,7 +580,7 @@ export default function Demo() {
         id: "cell",
         title: "自定义单元格",
         description: "dateCellRender 可以渲染每天的自定义内容。",
-        code: `import { Calendar } from "aurora-ui"
+        code: `import { Calendar } from "nb666-ui"
 
 export default function Demo() {
   const events = {
@@ -627,7 +627,7 @@ export default function Demo() {
         id: "fullscreen",
         title: "全屏日历",
         description: "fullscreen 开启大尺寸月视图，适合嵌入页面作为日程面板。",
-        code: `import { Calendar } from "aurora-ui"
+        code: `import { Calendar } from "nb666-ui"
 
 export default function Demo() {
   return <Calendar fullscreen defaultValue={new Date()} />
@@ -654,19 +654,19 @@ export default function Demo() {
     description: "在内容区域叠加文字或图片水印，防止信息被随意截图传播。",
     categoryKey: "data-display",
     whenToUse: "当需要为敏感页面或文档增加版权标识时使用。",
-    importCode: `import { Watermark } from "aurora-ui"`,
+    importCode: `import { Watermark } from "nb666-ui"`,
     demos: [
       {
         id: "text",
         title: "文字水印",
         description: "content 支持字符串或数组，数组会分行渲染。",
-        code: `import { Watermark } from "aurora-ui"
+        code: `import { Watermark } from "nb666-ui"
 
 export default function Demo() {
   return (
     <Watermark
       className="rounded-lg border"
-      content={["Aurora UI", "内部资料"]}
+      content={["NB666 UI", "内部资料"]}
       gap={[80, 60]}
     >
       <div className="flex h-40 items-center justify-center px-6">
@@ -681,7 +681,7 @@ export default function Demo() {
         element: (
           <Watermark
             className="rounded-lg border"
-            content={["Aurora UI", "内部资料"]}
+            content={["NB666 UI", "内部资料"]}
             gap={[80, 60]}
           >
             <div className="flex h-40 items-center justify-center px-6">
@@ -695,7 +695,7 @@ export default function Demo() {
       },
     ],
     api: [
-      { name: "content", description: "水印文字", type: "string | string[]", default: "Aurora UI" },
+      { name: "content", description: "水印文字", type: "string | string[]", default: "NB666 UI" },
       { name: "image", description: "水印图片地址", type: "string", default: "-" },
       { name: "width", description: "水印画布宽度", type: "number", default: "180" },
       { name: "height", description: "水印画布高度", type: "number", default: "140" },
@@ -714,13 +714,13 @@ export default function Demo() {
     description: "通过拖拽调整列表顺序，支持鼠标与触屏操作。",
     categoryKey: "data-display",
     whenToUse: "当需要让用户手动调整列表顺序（如排序、优先级）时使用。",
-    importCode: `import { Sortable } from "aurora-ui"`,
+    importCode: `import { Sortable } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "拖拽整行即可调整顺序，onChange 返回调整后的数组。",
-        code: `import { Sortable } from "aurora-ui"
+        code: `import { Sortable } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -745,7 +745,7 @@ export default function Demo() {
         id: "object",
         title: "复杂条目",
         description: "dataSource 支持对象，通过 rowKey 指定唯一键。",
-        code: `import { Sortable } from "aurora-ui"
+        code: `import { Sortable } from "nb666-ui"
 
 const data = [
   { id: 1, name: "首页", desc: "展示概览信息" },
@@ -792,7 +792,7 @@ export default function Demo() {
         id: "scroll",
         title: "滚动容器内拖拽",
         description: "放在高度有限的滚动容器中，拖到上下边缘会自动滚动。",
-        code: `import { Sortable } from "aurora-ui"
+        code: `import { Sortable } from "nb666-ui"
 
 const data = Array.from({ length: 12 }, (_, i) => ({ id: i + 1, name: \`任务 \${i + 1}\` }))
 
@@ -837,13 +837,13 @@ export default function Demo() {
     description: "以天/时/分/秒展示到目标时间的剩余时长，支持自定义格式与结束回调。",
     categoryKey: "data-display",
     whenToUse: "当需要展示活动剩余时间、抢购倒计时等场景时使用。",
-    importCode: `import { Countdown } from "aurora-ui"`,
+    importCode: `import { Countdown } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "value 传入目标时间戳或 Date，每秒自动更新。",
-        code: `import { Countdown } from "aurora-ui"
+        code: `import { Countdown } from "nb666-ui"
 
 export default function Demo() {
   const target = Date.now() + 1000 * 60 * 60 * 5
@@ -855,7 +855,7 @@ export default function Demo() {
         id: "format",
         title: "自定义格式",
         description: "format 支持 DD / HH / mm / ss 占位符，也可用 render 完全自定义。",
-        code: `import { Countdown } from "aurora-ui"
+        code: `import { Countdown } from "nb666-ui"
 
 export default function Demo() {
   const target = Date.now() + 1000 * 60 * 60 * 26
@@ -896,14 +896,14 @@ export default function Demo() {
     description: "滚动到底部时自动加载更多数据，支持加载中与结束提示。",
     categoryKey: "data-display",
     whenToUse: "当列表数据量较大、需要滚动分页加载时使用。",
-    importCode: `import { InfiniteScroll } from "aurora-ui"`,
+    importCode: `import { InfiniteScroll } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "滚动到接近底部时触发 onLoadMore，加载结束后显示 endMessage。",
         code: `import { useState } from "react"
-import { InfiniteScroll } from "aurora-ui"
+import { InfiniteScroll } from "nb666-ui"
 
 export default function Demo() {
   const [list, setList] = useState(Array.from({ length: 10 }, (_, i) => i + 1))

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { ArrowRight, BookOpen, Component, Github, Palette, Sparkles, Zap } from "lucide-react"
-import { Button } from "aurora-ui"
+import { Button } from "nb666-ui"
 import { categories, meta } from "../data/meta"
 import { allComponents } from "../registry"
 import { ThemeToggle } from "@/components/theme-toggle"

@@ -1,25 +1,25 @@
-import { Alert, Divider, Typography } from "aurora-ui"
+import { Alert, Divider, Typography } from "nb666-ui"
 import { CodeBlock } from "../components/CodeBlock"
 import { meta } from "../data/meta"
 
 const { Title, Paragraph, Text, Link } = Typography
 
 const installCode = `# npm
-npm install aurora-ui
+npm install nb666-ui
 
 # yarn
-yarn add aurora-ui
+yarn add nb666-ui
 
 # pnpm
-pnpm add aurora-ui`
+pnpm add nb666-ui`
 
 const quickStart = `import { createRoot } from "react-dom/client"
-import { Button } from "aurora-ui"
-import "aurora-ui/styles.css"
+import { Button } from "nb666-ui"
+import "nb666-ui/styles.css"
 
 function App() {
   return (
-    <Button type="primary" onClick={() => alert("Hello Aurora UI")}>
+    <Button type="primary" onClick={() => alert("Hello NB666 UI")}>
       点击我
     </Button>
   )
@@ -28,13 +28,13 @@ function App() {
 createRoot(document.getElementById("root")!).render(<App />)`
 
 const importCode = `// 具名导入：按需引入组件
-import { Button, Table, Modal } from "aurora-ui"
+import { Button, Table, Modal } from "nb666-ui"
 
 // 引入组件类型
-import type { ButtonProps } from "aurora-ui"
+import type { ButtonProps } from "nb666-ui"
 
 // 方法式组件
-import { message } from "aurora-ui"
+import { message } from "nb666-ui"
 
 message.success("操作成功")`
 
@@ -68,20 +68,20 @@ const autoImportUsage = `export default function App() {
   )
 }
 
-// 无需手动书写：import { Button, Table, Modal } from "aurora-ui"`
+// 无需手动书写：import { Button, Table, Modal } from "nb666-ui"`
 
 const autoImportVite = `// vite.config.ts
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import AutoImport from "unplugin-auto-import/vite"
-import { AuroraUIResolver } from "aurora-ui"
+import { NB666UIResolver } from "nb666-ui"
 
 export default defineConfig({
   plugins: [
     react(),
     AutoImport({
       imports: ["react"],
-      resolvers: [AuroraUIResolver],
+      resolvers: [NB666UIResolver],
       dts: "src/auto-imports.d.ts",
     }),
   ],
@@ -89,13 +89,13 @@ export default defineConfig({
 
 const autoImportWebpack = `// webpack.config.js
 const AutoImport = require("unplugin-auto-import/webpack").default
-const { AuroraUIResolver } = require("aurora-ui")
+const { NB666UIResolver } = require("nb666-ui")
 
 module.exports = {
   plugins: [
     AutoImport({
       imports: ["react"],
-      resolvers: [AuroraUIResolver],
+      resolvers: [NB666UIResolver],
       dts: "src/auto-imports.d.ts",
     }),
   ],
@@ -121,7 +121,7 @@ export function GettingStartedPage() {
         <Title level={2}>快速开始</Title>
         <Paragraph>引入样式后即可在应用中使用组件。</Paragraph>
         <CodeBlock code={quickStart} />
-        <Alert type="info" showIcon message="提示" description="本工程已将样式内联于入口文件，并配置了 aurora-ui 别名，示例代码即为真实可用的引用方式。" />
+        <Alert type="info" showIcon message="提示" description="本工程已将样式内联于入口文件，并配置了 nb666-ui 别名，示例代码即为真实可用的引用方式。" />
       </section>
 
       <Divider />
@@ -137,7 +137,7 @@ export function GettingStartedPage() {
       <section className="space-y-3">
         <Title level={2}>自动按需引入</Title>
         <Paragraph>
-          借助 <Text code>unplugin-auto-import</Text> 与内置的 <Text code>AuroraUIResolver</Text>，可在 Vite 或 Webpack 中自动按需导入组件，无需逐个 <Text code>import</Text>。
+          借助 <Text code>unplugin-auto-import</Text> 与内置的 <Text code>NB666UIResolver</Text>，可在 Vite 或 Webpack 中自动按需导入组件，无需逐个 <Text code>import</Text>。
         </Paragraph>
         <CodeBlock code={autoImportUsage} />
         <Title level={3}>Vite</Title>

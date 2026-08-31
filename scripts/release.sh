@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-MSG="${1:-chore: update aurora-ui}"
+MSG="${1:-chore: update nb666-ui}"
 
 echo "==> 1/3 构建组件库 (dist)"
 npm run build:lib

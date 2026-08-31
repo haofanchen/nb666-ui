@@ -15,7 +15,7 @@ export interface WatermarkProps extends Omit<React.HTMLAttributes<HTMLDivElement
 }
 
 export function Watermark({
-  content = "Aurora UI",
+  content = "NB666 UI",
   image,
   width = 180,
   height = 140,

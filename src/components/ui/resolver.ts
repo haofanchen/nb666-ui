@@ -1,8 +1,8 @@
 // 供 unplugin-auto-import 使用的按需导入解析器。
 // 使用方无需显式 import 组件，只要在 JSX 中书写 <Button /> 即会自动注入：
-// import { Button } from "aurora-ui"
+// import { Button } from "nb666-ui"
 
-export const auroraComponentNames = [
+export const nb666ComponentNames = [
   "Affix",
   "Alert",
   "Anchor",
@@ -90,14 +90,14 @@ export const auroraComponentNames = [
   "Watermark",
 ] as const
 
-export interface AuroraAutoImportResolver {
+export interface NB666AutoImportResolver {
   resolve: (name: string) => { name: string; from: string } | undefined
 }
 
-export const AuroraUIResolver: AuroraAutoImportResolver = {
+export const NB666UIResolver: NB666AutoImportResolver = {
   resolve(name: string) {
-    if ((auroraComponentNames as readonly string[]).includes(name)) {
-      return { name, from: "aurora-ui" }
+    if ((nb666ComponentNames as readonly string[]).includes(name)) {
+      return { name, from: "nb666-ui" }
     }
     return undefined
   },

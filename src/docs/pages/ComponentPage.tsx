@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom"
-import { Breadcrumb, Divider, Typography } from "aurora-ui"
+import { Breadcrumb, Divider, Typography } from "nb666-ui"
 import { DemoBox } from "../components/DemoBox"
 import { ApiTable } from "../components/ApiTable"
 import { CodeBlock } from "../components/CodeBlock"

@@ -20,8 +20,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "aurora-ui": ["./src/components/ui"],
-      "aurora-ui/*": ["./src/components/ui/*"]
+      "nb666-ui": ["./src/components/ui"],
+      "nb666-ui/*": ["./src/components/ui/*"]
     }
   },
   "include": ["src"]

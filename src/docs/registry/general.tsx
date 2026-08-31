@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button, Icon, Space, Typography, commonIconNames, iconNames } from "aurora-ui"
+import { Button, Icon, Space, Typography, commonIconNames, iconNames } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 const { Title, Text, Paragraph, Link } = Typography
@@ -41,13 +41,13 @@ export const generalComponents: ComponentDoc[] = [
     description: "按钮用于开始一个即时操作，标记了一个（或封装一组）操作命令。",
     categoryKey: "general",
     whenToUse: "当需要触发一个操作、提交表单或进行页面跳转时，使用按钮。",
-    importCode: `import { Button } from "aurora-ui"`,
+    importCode: `import { Button } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "包含五种类型：主要按钮、默认按钮、虚线按钮、文本按钮和链接按钮。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -74,7 +74,7 @@ export default function Demo() {
         id: "size",
         title: "按钮尺寸",
         description: "按钮有大、中、小三种尺寸。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -97,7 +97,7 @@ export default function Demo() {
         id: "loading",
         title: "加载与禁用",
         description: "添加 loading 属性可让按钮进入加载状态，disabled 属性禁用按钮，danger 表示危险操作。",
-        code: `import { Button, Space } from "aurora-ui"
+        code: `import { Button, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -120,7 +120,7 @@ export default function Demo() {
         id: "icon",
         title: "图标与块级按钮",
         description: "通过 icon 属性添加图标，block 属性可让按钮撑满父容器宽度。",
-        code: `import { Button, Icon, Space } from "aurora-ui"
+        code: `import { Button, Icon, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -164,13 +164,13 @@ export default function Demo() {
     description: "语义化的矢量图标，封装全部 Lucide 图标（1600+），支持按需加载、缩放与旋转。",
     categoryKey: "general",
     whenToUse: "当需要用图形符号辅助表达语义、提升界面可读性时，使用图标。",
-    importCode: `import { Icon } from "aurora-ui"`,
+    importCode: `import { Icon } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 name 属性指定图标，size 与 color 控制尺寸和颜色。",
-        code: `import { Icon, Space } from "aurora-ui"
+        code: `import { Icon, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -197,7 +197,7 @@ export default function Demo() {
         id: "spin",
         title: "旋转与加载",
         description: "spin 属性让图标旋转，rotate 属性指定固定角度。",
-        code: `import { Icon, Space } from "aurora-ui"
+        code: `import { Icon, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -223,7 +223,7 @@ export default function Demo() {
         title: "图标集合",
         description: "内置全部 Lucide 图标（1600+），可搜索；常用图标静态引入，其余按需加载。",
         code: `import { useState } from "react"
-import { Icon, iconNames } from "aurora-ui"
+import { Icon, iconNames } from "nb666-ui"
 
 export default function Demo() {
   const [query, setQuery] = useState("")
@@ -267,13 +267,13 @@ export default function Demo() {
     description: "文本的基本格式，包括标题、段落、文本样式与链接。",
     categoryKey: "general",
     whenToUse: "当需要展示标题、段落、强调文本或链接时，使用排版组件。",
-    importCode: `import { Typography } from "aurora-ui"`,
+    importCode: `import { Typography } from "nb666-ui"`,
     demos: [
       {
         id: "title",
         title: "标题",
         description: "Title 支持 1 至 5 级标题。",
-        code: `import { Typography } from "aurora-ui"
+        code: `import { Typography } from "nb666-ui"
 
 const { Title } = Typography
 
@@ -302,7 +302,7 @@ export default function Demo() {
         id: "text",
         title: "文本样式",
         description: "Text 支持次级、成功、警告、危险等语义色，以及代码、标记、删除、加粗等样式。",
-        code: `import { Typography, Space } from "aurora-ui"
+        code: `import { Typography, Space } from "nb666-ui"
 
 const { Text } = Typography
 
@@ -345,7 +345,7 @@ export default function Demo() {
         id: "paragraph",
         title: "段落与链接",
         description: "Paragraph 用于多行文本，Link 用于可点击的链接。",
-        code: `import { Typography } from "aurora-ui"
+        code: `import { Typography } from "nb666-ui"
 
 const { Paragraph, Link } = Typography
 
@@ -353,13 +353,13 @@ export default function Demo() {
   return (
     <div className="max-w-xl space-y-4">
       <Paragraph>
-        Aurora UI 是一套面向企业级中后台产品的组件库，提供一致的设计语言与丰富的组件。
+        NB666 UI 是一套面向企业级中后台产品的组件库，提供一致的设计语言与丰富的组件。
       </Paragraph>
       <Paragraph type="secondary">
         这是次级段落文本，用于展示辅助说明信息，颜色比正文更柔和。
       </Paragraph>
       <Paragraph>
-        访问 <Link href="https://github.com/haofanchen/aurora-ui">GitHub</Link> 获取更多示例与源码。
+        访问 <Link href="https://github.com/haofanchen/nb666-ui">GitHub</Link> 获取更多示例与源码。
       </Paragraph>
     </div>
   )
@@ -367,13 +367,13 @@ export default function Demo() {
         element: (
           <div className="max-w-xl space-y-4">
             <Paragraph>
-              Aurora UI 是一套面向企业级中后台产品的组件库，提供一致的设计语言与丰富的组件。
+              NB666 UI 是一套面向企业级中后台产品的组件库，提供一致的设计语言与丰富的组件。
             </Paragraph>
             <Paragraph type="secondary">
               这是次级段落文本，用于展示辅助说明信息，颜色比正文更柔和。
             </Paragraph>
             <Paragraph>
-              访问 <Link href="https://github.com/haofanchen/aurora-ui">GitHub</Link> 获取更多示例与源码。
+              访问 <Link href="https://github.com/haofanchen/nb666-ui">GitHub</Link> 获取更多示例与源码。
             </Paragraph>
           </div>
         ),

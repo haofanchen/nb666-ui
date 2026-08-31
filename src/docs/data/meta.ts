@@ -1,10 +1,10 @@
 export const meta = {
-  name: "Aurora UI",
-  shortName: "Aurora",
+  name: "NB666 UI",
+  shortName: "NB666",
   slogan: "优雅、现代的 React 组件库",
-  description: "Aurora UI 是一套面向企业级中后台产品的 React 组件库，提供一致的设计语言、丰富的组件与完善的文档。",
+  description: "NB666 UI 是一套面向企业级中后台产品的 React 组件库，提供一致的设计语言、丰富的组件与完善的文档。",
   version: "1.0.0",
-  repo: "https://github.com/haofanchen/aurora-ui",
+  repo: "https://github.com/haofanchen/nb666-ui",
 }
 
 export const categories = [

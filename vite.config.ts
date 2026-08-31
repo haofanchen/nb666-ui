@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "aurora-ui": fileURLToPath(new URL("./src/components/ui", import.meta.url)),
+      "nb666-ui": fileURLToPath(new URL("./src/components/ui", import.meta.url)),
     },
   },
   build: {

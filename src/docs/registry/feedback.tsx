@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Button, message, modal, Modal, Progress, Space, Spin } from "aurora-ui"
+import { Button, message, modal, Modal, Progress, Space, Spin } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 function ModalDemo() {
@@ -59,14 +59,14 @@ export const feedbackComponents: ComponentDoc[] = [
     description: "模态对话框，在浮层中展示内容并引导用户完成操作。",
     categoryKey: "feedback",
     whenToUse: "当需要用户确认信息或完成一个独立任务时使用。",
-    importCode: `import { Modal } from "aurora-ui"`,
+    importCode: `import { Modal } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 open 控制显示，onCancel / onOk 处理操作。",
         code: `import { useState } from "react"
-import { Button, Modal } from "aurora-ui"
+import { Button, Modal } from "nb666-ui"
 
 export default function Demo() {
   const [open, setOpen] = useState(false)
@@ -91,7 +91,7 @@ export default function Demo() {
         title: "自定义底部",
         description: "footer 传入 null 可隐藏底部按钮。",
         code: `import { useState } from "react"
-import { Button, Modal } from "aurora-ui"
+import { Button, Modal } from "nb666-ui"
 
 export default function Demo() {
   const [open, setOpen] = useState(false)
@@ -133,7 +133,7 @@ export default function Demo() {
     description: "通过 modal.confirm / info / success / warning / error 快捷弹出确认或提示对话框。",
     categoryKey: "feedback",
     whenToUse: "当需要在不声明 Modal 组件的情况下快速弹出确认框时使用。",
-    importCode: `import { modal, ModalHolder } from "aurora-ui"
+    importCode: `import { modal, ModalHolder } from "nb666-ui"
 
 // 在应用根节点挂载一次
 <ModalHolder />`,
@@ -142,7 +142,7 @@ export default function Demo() {
         id: "confirm",
         title: "确认框",
         description: "confirm 弹出带取消与确认按钮的对话框，onOk 支持异步。",
-        code: `import { Button, modal } from "aurora-ui"
+        code: `import { Button, modal } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -183,7 +183,7 @@ export default function Demo() {
         id: "status",
         title: "状态提示框",
         description: "info / success / warning / error 提供不同状态的单按钮提示框。",
-        code: `import { Button, Space, modal } from "aurora-ui"
+        code: `import { Button, Space, modal } from "nb666-ui"
 
 export default function Demo() {
   const show = (type) => modal[type]({ title: "提示", content: \`这是一条 \${type} 提示。\` })
@@ -227,13 +227,13 @@ export default function Demo() {
     description: "全局展示操作反馈信息，支持多种类型。",
     categoryKey: "feedback",
     whenToUse: "当需要向用户反馈操作结果时使用，轻量且自动消失。",
-    importCode: `import { message } from "aurora-ui"`,
+    importCode: `import { message } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "调用 message 的不同方法展示对应类型的提示。",
-        code: `import { Button, message, Space } from "aurora-ui"
+        code: `import { Button, message, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -273,13 +273,13 @@ export default function Demo() {
     description: "展示操作的当前进度，支持线形与环形。",
     categoryKey: "feedback",
     whenToUse: "当需要展示任务完成进度时使用。",
-    importCode: `import { Progress } from "aurora-ui"`,
+    importCode: `import { Progress } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "线形进度条，支持不同状态。",
-        code: `import { Progress, Space } from "aurora-ui"
+        code: `import { Progress, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -304,7 +304,7 @@ export default function Demo() {
         id: "circle",
         title: "环形进度条",
         description: "type 为 circle 时使用环形进度条。",
-        code: `import { Progress, Space } from "aurora-ui"
+        code: `import { Progress, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -327,7 +327,7 @@ export default function Demo() {
         id: "dashboard",
         title: "仪表盘进度",
         description: "type 为 dashboard 时使用半圆仪表盘样式。",
-        code: `import { Progress, Space } from "aurora-ui"
+        code: `import { Progress, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -350,7 +350,7 @@ export default function Demo() {
         id: "steps",
         title: "分段进度条",
         description: "steps 将进度条拆分为若干段展示。",
-        code: `import { Progress, Space } from "aurora-ui"
+        code: `import { Progress, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -386,13 +386,13 @@ export default function Demo() {
     description: "用于页面和区块的加载中状态。",
     categoryKey: "feedback",
     whenToUse: "当数据加载需要等待时，展示加载状态。",
-    importCode: `import { Spin } from "aurora-ui"`,
+    importCode: `import { Spin } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "不同尺寸的加载指示。",
-        code: `import { Space, Spin } from "aurora-ui"
+        code: `import { Space, Spin } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -415,7 +415,7 @@ export default function Demo() {
         id: "wrap",
         title: "包裹内容",
         description: "作为容器包裹内容，加载时覆盖显示。",
-        code: `import { Spin } from "aurora-ui"
+        code: `import { Spin } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -437,7 +437,7 @@ export default function Demo() {
         title: "全屏加载",
         description: "fullscreen 覆盖整个视口，用于页面级加载。",
         code: `import { useState } from "react"
-import { Button, Spin } from "aurora-ui"
+import { Button, Spin } from "nb666-ui"
 
 export default function Demo() {
   const [loading, setLoading] = useState(false)

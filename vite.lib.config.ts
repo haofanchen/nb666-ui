@@ -14,10 +14,10 @@ export default defineConfig({
     emptyOutDir: false,
     lib: {
       entry: fileURLToPath(new URL("./src/components/ui/lib.ts", import.meta.url)),
-      name: "AuroraUI",
+      name: "NB666UI",
       formats: ["es", "cjs"],
-      fileName: (format) => (format === "es" ? "aurora-ui.js" : "aurora-ui.cjs"),
-      cssFileName: "aurora-ui",
+      fileName: (format) => (format === "es" ? "nb666-ui.js" : "nb666-ui.cjs"),
+      cssFileName: "nb666-ui",
     },
     rollupOptions: {
       external: (id) => /^(react|react-dom|react\/jsx-runtime|lucide-react)(\/|$)/.test(id),

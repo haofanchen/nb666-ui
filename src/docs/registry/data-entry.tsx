@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Checkbox, CheckboxGroup, Icon, Input, InputNumber, RadioGroup, Select, Slider, Space, Switch } from "aurora-ui"
+import { Checkbox, CheckboxGroup, Icon, Input, InputNumber, RadioGroup, Select, Slider, Space, Switch } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 function CheckboxAllDemo() {
@@ -39,13 +39,13 @@ export const dataEntryComponents: ComponentDoc[] = [
     description: "通过鼠标或键盘输入内容的基础表单组件。",
     categoryKey: "data-entry",
     whenToUse: "当需要用户输入单行文本时使用。",
-    importCode: `import { Input } from "aurora-ui"`,
+    importCode: `import { Input } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持三种尺寸。",
-        code: `import { Input, Space } from "aurora-ui"
+        code: `import { Input, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -68,7 +68,7 @@ export default function Demo() {
         id: "affix",
         title: "前后缀与附加元素",
         description: "prefix / suffix 添加前后缀，addonBefore / addonAfter 添加附加元素。",
-        code: `import { Icon, Input, Space } from "aurora-ui"
+        code: `import { Icon, Input, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -91,7 +91,7 @@ export default function Demo() {
         id: "clear",
         title: "清除与状态",
         description: "allowClear 支持一键清空，status 表示校验状态。",
-        code: `import { Input, Space } from "aurora-ui"
+        code: `import { Input, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -114,7 +114,7 @@ export default function Demo() {
         id: "password",
         title: "密码输入",
         description: "设置 type 为 password 时自动显示密码可见性切换。",
-        code: `import { Input, Space } from "aurora-ui"
+        code: `import { Input, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -150,13 +150,13 @@ export default function Demo() {
     description: "通过鼠标或键盘输入数值，支持步进调整。",
     categoryKey: "data-entry",
     whenToUse: "当需要输入数值并限制范围时使用。",
-    importCode: `import { InputNumber } from "aurora-ui"`,
+    importCode: `import { InputNumber } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 step 控制步长，min / max 限制范围。",
-        code: `import { InputNumber, Space } from "aurora-ui"
+        code: `import { InputNumber, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -179,7 +179,7 @@ export default function Demo() {
         id: "size",
         title: "尺寸",
         description: "支持三种尺寸。",
-        code: `import { InputNumber, Space } from "aurora-ui"
+        code: `import { InputNumber, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -218,13 +218,13 @@ export default function Demo() {
     description: "从一组选项中选择一个值。",
     categoryKey: "data-entry",
     whenToUse: "当需要从预设选项中选择单个值时使用。",
-    importCode: `import { Select } from "aurora-ui"`,
+    importCode: `import { Select } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "通过 options 配置选项。",
-        code: `import { Select, Space } from "aurora-ui"
+        code: `import { Select, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -270,7 +270,7 @@ export default function Demo() {
         id: "search",
         title: "可搜索与清空",
         description: "showSearch 支持搜索，allowClear 支持清空。",
-        code: `import { Select, Space } from "aurora-ui"
+        code: `import { Select, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -301,7 +301,7 @@ export default function Demo() {
         id: "multiple",
         title: "多选",
         description: "multiple 开启多选模式，选中项以标签展示。",
-        code: `import { Select } from "aurora-ui"
+        code: `import { Select } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -356,13 +356,13 @@ export default function Demo() {
     description: "在一组可选项中进行多项选择。",
     categoryKey: "data-entry",
     whenToUse: "当需要从一组选项中选择一个或多个值时使用。",
-    importCode: `import { Checkbox, CheckboxGroup } from "aurora-ui"`,
+    importCode: `import { Checkbox, CheckboxGroup } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "单独使用 Checkbox，onChange 返回选中状态。",
-        code: `import { Checkbox } from "aurora-ui"
+        code: `import { Checkbox } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -377,7 +377,7 @@ export default function Demo() {
         id: "group",
         title: "选项组",
         description: "使用 CheckboxGroup 管理一组选项。",
-        code: `import { CheckboxGroup } from "aurora-ui"
+        code: `import { CheckboxGroup } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -409,7 +409,7 @@ export default function Demo() {
         title: "全选",
         description: "全选框通过 checked 与 indeterminate 联动子选项，实现全选、半选与取消。",
         code: `import { useState } from "react"
-import { Checkbox } from "aurora-ui"
+import { Checkbox } from "nb666-ui"
 
 const options = ["选项一", "选项二", "选项三"]
 
@@ -460,13 +460,13 @@ export default function Demo() {
     description: "在一组可选项中进行单项选择。",
     categoryKey: "data-entry",
     whenToUse: "当需要从一组选项中仅选择一个值时使用。",
-    importCode: `import { Radio, RadioGroup } from "aurora-ui"`,
+    importCode: `import { Radio, RadioGroup } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "使用 RadioGroup 管理一组单选项。",
-        code: `import { RadioGroup } from "aurora-ui"
+        code: `import { RadioGroup } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -497,7 +497,7 @@ export default function Demo() {
         id: "button",
         title: "按钮样式",
         description: "optionType 为 button 时使用按钮样式。",
-        code: `import { RadioGroup } from "aurora-ui"
+        code: `import { RadioGroup } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -541,13 +541,13 @@ export default function Demo() {
     description: "表示两种状态之间的切换。",
     categoryKey: "data-entry",
     whenToUse: "当需要表示开关状态或启停某项设置时使用。",
-    importCode: `import { Switch } from "aurora-ui"`,
+    importCode: `import { Switch } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "onChange 返回切换后的状态。",
-        code: `import { Switch, Space } from "aurora-ui"
+        code: `import { Switch, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -570,7 +570,7 @@ export default function Demo() {
         id: "text",
         title: "带文字与尺寸",
         description: "checkedChildren / unCheckedChildren 自定义开关文字。",
-        code: `import { Switch, Space } from "aurora-ui"
+        code: `import { Switch, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -607,13 +607,13 @@ export default function Demo() {
     description: "通过拖动滑块在范围内选择数值。",
     categoryKey: "data-entry",
     whenToUse: "当需要在连续或离散范围内选择数值时使用。",
-    importCode: `import { Slider } from "aurora-ui"`,
+    importCode: `import { Slider } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "拖动滑块选择数值，onChange 返回当前值。",
-        code: `import { Slider } from "aurora-ui"
+        code: `import { Slider } from "nb666-ui"
 
 export default function Demo() {
   return <Slider defaultValue={30} onChange={(value) => console.log(value)} />
@@ -624,7 +624,7 @@ export default function Demo() {
         id: "step",
         title: "步长与范围",
         description: "min / max / step 控制范围与步长。",
-        code: `import { Slider, Space } from "aurora-ui"
+        code: `import { Slider, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -645,7 +645,7 @@ export default function Demo() {
         id: "range",
         title: "区间选择",
         description: "range 开启双滑块，用于选择一个数值区间。",
-        code: `import { Slider } from "aurora-ui"
+        code: `import { Slider } from "nb666-ui"
 
 export default function Demo() {
   return <Slider range defaultValue={[20, 60]} onChange={(value) => console.log(value)} />

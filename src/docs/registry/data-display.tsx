@@ -1,4 +1,4 @@
-import { Alert, Avatar, AvatarGroup, Badge, Button, Card, CardMeta, Collapse, Empty, Icon, Space, Table, Tag, Tooltip } from "aurora-ui"
+import { Alert, Avatar, AvatarGroup, Badge, Button, Card, CardMeta, Collapse, Empty, Icon, Space, Table, Tag, Tooltip } from "nb666-ui"
 import type { ComponentDoc } from "../data/types"
 
 const tableData = [
@@ -16,13 +16,13 @@ export const dataDisplayComponents: ComponentDoc[] = [
     description: "通用卡片容器，可承载标题、内容与操作。",
     categoryKey: "data-display",
     whenToUse: "当需要将相关信息聚合在统一容器中展示时使用。",
-    importCode: `import { Card } from "aurora-ui"`,
+    importCode: `import { Card } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "包含标题与操作区的卡片。",
-        code: `import { Button, Card } from "aurora-ui"
+        code: `import { Button, Card } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -41,7 +41,7 @@ export default function Demo() {
         id: "hoverable",
         title: "可悬浮与加载",
         description: "hoverable 增加悬浮阴影，loading 展示加载骨架。",
-        code: `import { Card, Space } from "aurora-ui"
+        code: `import { Card, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -62,14 +62,14 @@ export default function Demo() {
         id: "meta",
         title: "Meta 信息",
         description: "CardMeta 提供头像、标题与描述的组合展示。",
-        code: `import { Avatar, Card, CardMeta } from "aurora-ui"
+        code: `import { Avatar, Card, CardMeta } from "nb666-ui"
 
 export default function Demo() {
   return (
     <Card className="max-w-sm">
       <CardMeta
         avatar={<Avatar>A</Avatar>}
-        title="Aurora UI"
+        title="NB666 UI"
         description="优雅、现代的 React 组件库"
       />
     </Card>
@@ -79,7 +79,7 @@ export default function Demo() {
           <Card className="max-w-sm">
             <CardMeta
               avatar={<Avatar>A</Avatar>}
-              title="Aurora UI"
+              title="NB666 UI"
               description="优雅、现代的 React 组件库"
             />
           </Card>
@@ -107,13 +107,13 @@ export default function Demo() {
     description: "展示行列数据，支持自定义列渲染与分页。",
     categoryKey: "data-display",
     whenToUse: "当需要展示结构化数据并支持排序、分页等操作时使用。",
-    importCode: `import { Table } from "aurora-ui"`,
+    importCode: `import { Table } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "columns 定义列，dataSource 传入数据。",
-        code: `import { Table } from "aurora-ui"
+        code: `import { Table } from "nb666-ui"
 
 const data = [
   { key: "1", name: "张三", age: 28, city: "北京" },
@@ -148,7 +148,7 @@ export default function Demo() {
         id: "render",
         title: "自定义列与状态",
         description: "render 自定义单元格，结合 Tag 展示状态。",
-        code: `import { Table, Tag } from "aurora-ui"
+        code: `import { Table, Tag } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -195,7 +195,7 @@ export default function Demo() {
         id: "pagination",
         title: "分页表格",
         description: "传入 pagination 配置启用分页。",
-        code: `import { Table } from "aurora-ui"
+        code: `import { Table } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -231,7 +231,7 @@ export default function Demo() {
         id: "sort",
         title: "排序",
         description: "在列上配置 sorter，点击表头切换升序 / 降序。",
-        code: `import { Table } from "aurora-ui"
+        code: `import { Table } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -267,7 +267,7 @@ export default function Demo() {
         id: "selection",
         title: "行选择",
         description: "rowSelection 添加复选框列，支持全选与半选。",
-        code: `import { Table } from "aurora-ui"
+        code: `import { Table } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -321,13 +321,13 @@ export default function Demo() {
     description: "进行标记和分类的小标签。",
     categoryKey: "data-display",
     whenToUse: "当需要标记状态、分类或属性时使用。",
-    importCode: `import { Tag } from "aurora-ui"`,
+    importCode: `import { Tag } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "内置四种语义色与处理中颜色。",
-        code: `import { Space, Tag } from "aurora-ui"
+        code: `import { Space, Tag } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -354,7 +354,7 @@ export default function Demo() {
         id: "custom",
         title: "自定义颜色与关闭",
         description: "color 支持任意颜色，closable 支持关闭。",
-        code: `import { Space, Tag } from "aurora-ui"
+        code: `import { Space, Tag } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -389,13 +389,13 @@ export default function Demo() {
     description: "在元素右上角展示数字或状态点。",
     categoryKey: "data-display",
     whenToUse: "当需要提示未读消息数、数量或状态时使用。",
-    importCode: `import { Badge } from "aurora-ui"`,
+    importCode: `import { Badge } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "count 显示数量，overflowCount 限制最大显示值。",
-        code: `import { Avatar, Badge, Space } from "aurora-ui"
+        code: `import { Avatar, Badge, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -418,7 +418,7 @@ export default function Demo() {
         id: "status",
         title: "状态点",
         description: "status 设置状态颜色，可脱离子元素独立使用。",
-        code: `import { Badge, Space } from "aurora-ui"
+        code: `import { Badge, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -456,13 +456,13 @@ export default function Demo() {
     description: "用来代表用户或事物，支持图片、图标或字符。",
     categoryKey: "data-display",
     whenToUse: "当需要展示用户头像或对象标识时使用。",
-    importCode: `import { Avatar } from "aurora-ui"`,
+    importCode: `import { Avatar } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "支持图片、文字与图标三种形式。",
-        code: `import { Avatar, Icon, Space } from "aurora-ui"
+        code: `import { Avatar, Icon, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -487,7 +487,7 @@ export default function Demo() {
         id: "size",
         title: "尺寸",
         description: "支持预设尺寸与自定义像素。",
-        code: `import { Avatar, Space } from "aurora-ui"
+        code: `import { Avatar, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -512,7 +512,7 @@ export default function Demo() {
         id: "group",
         title: "头像组",
         description: "AvatarGroup 将多个头像重叠展示，超出部分以 +N 汇总。",
-        code: `import { Avatar, AvatarGroup } from "aurora-ui"
+        code: `import { Avatar, AvatarGroup } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -554,13 +554,13 @@ export default function Demo() {
     description: "简单的文字提示气泡，悬停或点击触发。",
     categoryKey: "data-display",
     whenToUse: "当需要为元素补充说明文字时使用。",
-    importCode: `import { Tooltip } from "aurora-ui"`,
+    importCode: `import { Tooltip } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "悬停触发，placement 控制方向。",
-        code: `import { Button, Space, Tooltip } from "aurora-ui"
+        code: `import { Button, Space, Tooltip } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -585,7 +585,7 @@ export default function Demo() {
         id: "click",
         title: "点击触发",
         description: "trigger 为 click 时点击触发提示。",
-        code: `import { Button, Tooltip } from "aurora-ui"
+        code: `import { Button, Tooltip } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -615,13 +615,13 @@ export default function Demo() {
     description: "页面展示警告信息，支持四种语义类型。",
     categoryKey: "data-display",
     whenToUse: "当需要向用户反馈明确的提示信息时使用。",
-    importCode: `import { Alert } from "aurora-ui"`,
+    importCode: `import { Alert } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "四种语义类型。",
-        code: `import { Alert, Space } from "aurora-ui"
+        code: `import { Alert, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -646,7 +646,7 @@ export default function Demo() {
         id: "desc",
         title: "带图标与描述",
         description: "showIcon 显示图标，description 展示辅助说明。",
-        code: `import { Alert, Space } from "aurora-ui"
+        code: `import { Alert, Space } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -680,13 +680,13 @@ export default function Demo() {
     description: "空状态时的占位提示。",
     categoryKey: "data-display",
     whenToUse: "当数据为空或加载失败时，展示空状态。",
-    importCode: `import { Empty } from "aurora-ui"`,
+    importCode: `import { Empty } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "自定义描述与操作区。",
-        code: `import { Button, Empty } from "aurora-ui"
+        code: `import { Button, Empty } from "nb666-ui"
 
 export default function Demo() {
   return (
@@ -715,21 +715,21 @@ export default function Demo() {
     description: "对内容进行分组与折叠展示。",
     categoryKey: "data-display",
     whenToUse: "当内容较多、需要折叠隐藏部分信息时使用。",
-    importCode: `import { Collapse } from "aurora-ui"`,
+    importCode: `import { Collapse } from "nb666-ui"`,
     demos: [
       {
         id: "basic",
         title: "基础用法",
         description: "默认展开第一项。",
-        code: `import { Collapse } from "aurora-ui"
+        code: `import { Collapse } from "nb666-ui"
 
 export default function Demo() {
   return (
     <Collapse
       defaultActiveKey={["1"]}
       items={[
-        { key: "1", label: "什么是 Aurora UI？", children: "Aurora UI 是一套现代的 React 组件库。" },
-        { key: "2", label: "如何安装？", children: "使用 npm install aurora-ui 即可安装。" },
+        { key: "1", label: "什么是 NB666 UI？", children: "NB666 UI 是一套现代的 React 组件库。" },
+        { key: "2", label: "如何安装？", children: "使用 npm install nb666-ui 即可安装。" },
         { key: "3", label: "如何贡献？", children: "欢迎提交 Issue 与 Pull Request。" },
       ]}
     />
@@ -739,8 +739,8 @@ export default function Demo() {
           <Collapse
             defaultActiveKey={["1"]}
             items={[
-              { key: "1", label: "什么是 Aurora UI？", children: "Aurora UI 是一套现代的 React 组件库。" },
-              { key: "2", label: "如何安装？", children: "使用 npm install aurora-ui 即可安装。" },
+              { key: "1", label: "什么是 NB666 UI？", children: "NB666 UI 是一套现代的 React 组件库。" },
+              { key: "2", label: "如何安装？", children: "使用 npm install nb666-ui 即可安装。" },
               { key: "3", label: "如何贡献？", children: "欢迎提交 Issue 与 Pull Request。" },
             ]}
           />
@@ -750,7 +750,7 @@ export default function Demo() {
         id: "accordion",
         title: "手风琴模式",
         description: "accordion 开启手风琴，一次仅展开一项。",
-        code: `import { Collapse } from "aurora-ui"
+        code: `import { Collapse } from "nb666-ui"
 
 export default function Demo() {
   return (
