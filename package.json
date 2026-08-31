@@ -23,7 +23,9 @@
     "build": "tsc -b && vite build",
     "build:lib": "rm -rf dist && tsc -p tsconfig.lib.json && vite build --config vite.lib.config.ts",
     "preview": "vite preview --outDir docs-dist",
-    "prepublishOnly": "npm run build:lib"
+    "prepublishOnly": "npm run build:lib",
+    "release": "bash scripts/release.sh",
+    "release:publish": "bash scripts/release.sh && npm publish"
   },
   "keywords": [
     "react",
