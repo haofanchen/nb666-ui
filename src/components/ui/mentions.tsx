@@ -1,7 +1,7 @@
 import * as React from "react"
 import { AtSign } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useClickOutside } from "@/hooks/use-click-outside"
+import { cn } from "../../lib/utils"
+import { useClickOutside } from "../../hooks/use-click-outside"
 
 export interface MentionOption {
   label: string

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { User } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 const avatarSize: Record<string, string> = {
   small: "size-6 text-xs",

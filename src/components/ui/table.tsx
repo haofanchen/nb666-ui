@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ChevronDown, ChevronUp, Loader2 } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 import { Pagination } from "./pagination"
 import { Checkbox } from "./checkbox"
 

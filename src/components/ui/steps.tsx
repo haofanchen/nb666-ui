@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Check, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export type StepStatus = "wait" | "process" | "finish" | "error"
 

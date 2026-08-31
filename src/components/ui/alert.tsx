@@ -1,6 +1,6 @@
 import * as React from "react"
 import { AlertCircle, CheckCircle2, Info, TriangleAlert, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 const alertStyles = {
   success: { border: "border-success/30 bg-success/5", icon: <CheckCircle2 className="size-4 text-success" />, title: "text-success" },

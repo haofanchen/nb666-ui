@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight } from "@/lib/styles"
-import { useControllableState } from "@/hooks/use-controllable"
-import { useClickOutside } from "@/hooks/use-click-outside"
-import { MONTHS, WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "@/lib/date"
+import { cn } from "../../lib/utils"
+import { controlHeight } from "../../lib/styles"
+import { useControllableState } from "../../hooks/use-controllable"
+import { useClickOutside } from "../../hooks/use-click-outside"
+import { MONTHS, WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "../../lib/date"
 
 type ViewMode = "date" | "month" | "year"
 

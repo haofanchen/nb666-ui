@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Minus, Plus } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight } from "@/lib/styles"
+import { cn } from "../../lib/utils"
+import { controlHeight } from "../../lib/styles"
 
 export interface InputNumberProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange" | "size" | "value"> {

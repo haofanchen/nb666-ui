@@ -1,6 +1,6 @@
 import * as React from "react"
 import { AlertCircle, CheckCircle2, Info, Loader2, TriangleAlert, X } from "lucide-react"
-import { createToastStore, type ToastItem } from "@/lib/toast-store"
+import { createToastStore, type ToastItem } from "../../lib/toast-store"
 
 type MessageType = "success" | "info" | "warning" | "error" | "loading"
 

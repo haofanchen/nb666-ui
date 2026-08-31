@@ -1,6 +1,6 @@
 import * as React from "react"
-import { cn } from "@/lib/utils"
-import { useBreakpoint, type Breakpoint } from "@/hooks/use-breakpoint"
+import { cn } from "../../lib/utils"
+import { useBreakpoint, type Breakpoint } from "../../hooks/use-breakpoint"
 
 const GutterContext = React.createContext<number>(0)
 

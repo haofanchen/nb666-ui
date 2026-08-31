@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useClickOutside } from "@/hooks/use-click-outside"
+import { cn } from "../../lib/utils"
+import { useClickOutside } from "../../hooks/use-click-outside"
 
 export interface DropdownMenuItem {
   key: string

@@ -1,8 +1,8 @@
 import * as React from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "@/lib/date"
-import { useControllableState } from "@/hooks/use-controllable"
+import { cn } from "../../lib/utils"
+import { WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "../../lib/date"
+import { useControllableState } from "../../hooks/use-controllable"
 
 export interface CalendarProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange" | "defaultValue"> {
   value?: Date | string

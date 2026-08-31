@@ -1,8 +1,8 @@
 import * as React from "react"
 import { createPortal } from "react-dom"
 import { X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useControllableState } from "@/hooks/use-controllable"
+import { cn } from "../../lib/utils"
+import { useControllableState } from "../../hooks/use-controllable"
 import { Button } from "./button"
 
 export interface TourStep {

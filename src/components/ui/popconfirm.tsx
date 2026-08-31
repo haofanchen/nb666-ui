@@ -1,8 +1,8 @@
 import * as React from "react"
 import { TriangleAlert } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { overlayPlacement } from "@/lib/styles"
-import { useClickOutside } from "@/hooks/use-click-outside"
+import { cn } from "../../lib/utils"
+import { overlayPlacement } from "../../lib/styles"
+import { useClickOutside } from "../../hooks/use-click-outside"
 import { Button } from "./button"
 
 export interface PopconfirmProps {

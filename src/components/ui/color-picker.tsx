@@ -1,6 +1,6 @@
 import * as React from "react"
-import { cn } from "@/lib/utils"
-import { useControllableState } from "@/hooks/use-controllable"
+import { cn } from "../../lib/utils"
+import { useControllableState } from "../../hooks/use-controllable"
 
 export interface ColorPickerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
   value?: string

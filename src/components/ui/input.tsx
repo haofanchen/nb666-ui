@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Eye, EyeOff, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight } from "@/lib/styles"
+import { cn } from "../../lib/utils"
+import { controlHeight } from "../../lib/styles"
 
 const inputSizeClass: Record<string, string> = {
   small: `${controlHeight.small} px-2`,

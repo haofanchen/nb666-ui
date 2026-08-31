@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight } from "@/lib/styles"
-import { useControllableState } from "@/hooks/use-controllable"
-import { useClickOutside } from "@/hooks/use-click-outside"
-import { WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "@/lib/date"
+import { cn } from "../../lib/utils"
+import { controlHeight } from "../../lib/styles"
+import { useControllableState } from "../../hooks/use-controllable"
+import { useClickOutside } from "../../hooks/use-click-outside"
+import { WEEKDAYS, addMonths, daysInMonth, isSameDay, mondayOffset, parseISO, toISO } from "../../lib/date"
 
 export interface RangePickerProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange" | "value" | "defaultValue"> {

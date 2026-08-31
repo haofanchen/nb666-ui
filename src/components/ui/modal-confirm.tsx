@@ -1,7 +1,7 @@
 import * as React from "react"
 import { createPortal } from "react-dom"
 import { AlertCircle, CheckCircle2, Info, TriangleAlert, X } from "lucide-react"
-import { createToastStore, type ToastItem } from "@/lib/toast-store"
+import { createToastStore, type ToastItem } from "../../lib/toast-store"
 import { Button } from "./button"
 
 type ModalMethodType = "confirm" | "info" | "success" | "warning" | "error"

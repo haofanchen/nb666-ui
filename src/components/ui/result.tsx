@@ -1,6 +1,6 @@
 import * as React from "react"
 import { AlertCircle, CheckCircle2, Info, TriangleAlert } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export interface ResultProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "title"> {
   status?: "success" | "info" | "warning" | "error" | "403" | "404" | "500"

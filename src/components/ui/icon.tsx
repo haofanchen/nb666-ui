@@ -8,7 +8,7 @@ import {
   ThumbsUp, MessageSquare, Share2, Bookmark, Zap, Globe, Lock, Unlock, Filter,
 } from "lucide-react"
 import dynamicIconImports from "lucide-react/dynamicIconImports"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 type IconComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>
 

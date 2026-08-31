@@ -1,6 +1,6 @@
 import * as React from "react"
 import { FileText, Upload as UploadIcon, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export interface UploadFile {
   name: string

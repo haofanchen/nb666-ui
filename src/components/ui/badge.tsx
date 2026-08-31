@@ -1,5 +1,5 @@
 import * as React from "react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 const statusColorMap: Record<string, string> = {
   success: "#16a34a",

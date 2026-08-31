@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Clock, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight } from "@/lib/styles"
-import { useControllableState } from "@/hooks/use-controllable"
-import { useClickOutside } from "@/hooks/use-click-outside"
+import { cn } from "../../lib/utils"
+import { controlHeight } from "../../lib/styles"
+import { useControllableState } from "../../hooks/use-controllable"
+import { useClickOutside } from "../../hooks/use-click-outside"
 
 export interface TimePickerProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange" | "value" | "defaultValue"> {

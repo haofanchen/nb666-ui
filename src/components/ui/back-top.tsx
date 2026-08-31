@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ChevronUp } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export interface BackTopProps extends React.HTMLAttributes<HTMLButtonElement> {
   visibilityHeight?: number

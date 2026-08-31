@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import { DocsLayout } from "@/docs/layout/DocsLayout"
 import { HomePage } from "@/docs/pages/HomePage"
 import { GettingStartedPage } from "@/docs/pages/GettingStartedPage"
@@ -7,7 +7,7 @@ import { ComponentPage } from "@/docs/pages/ComponentPage"
 
 export function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route element={<DocsLayout />}>
@@ -17,6 +17,6 @@ export function App() {
         </Route>
         <Route path="*" element={<HomePage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

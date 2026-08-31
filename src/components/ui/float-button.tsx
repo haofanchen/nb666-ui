@@ -1,5 +1,5 @@
 import * as React from "react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export interface FloatButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "type"> {
   icon?: React.ReactNode

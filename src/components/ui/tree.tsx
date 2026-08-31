@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ChevronRight, File, Folder, FolderOpen } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 import { Checkbox } from "./checkbox"
 
 export interface TreeDataNode {

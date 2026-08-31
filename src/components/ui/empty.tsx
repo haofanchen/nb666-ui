@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Inbox } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 export interface EmptyProps extends React.HTMLAttributes<HTMLDivElement> {
   description?: React.ReactNode

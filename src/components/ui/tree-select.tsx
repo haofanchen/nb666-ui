@@ -1,8 +1,8 @@
 import * as React from "react"
 import { ChevronDown, Search, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { controlHeight, popupPanelClass } from "@/lib/styles"
-import { useClickOutside } from "@/hooks/use-click-outside"
+import { cn } from "../../lib/utils"
+import { controlHeight, popupPanelClass } from "../../lib/styles"
+import { useClickOutside } from "../../hooks/use-click-outside"
 import { Tree, type TreeDataNode } from "./tree"
 
 export interface TreeSelectProps

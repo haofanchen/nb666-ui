@@ -1,6 +1,6 @@
 import * as React from "react"
 import { X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 
 const presetColors: Record<string, string> = {
   default: "border-border bg-muted text-muted-foreground",

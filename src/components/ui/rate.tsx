@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Star } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useControllableState } from "@/hooks/use-controllable"
+import { cn } from "../../lib/utils"
+import { useControllableState } from "../../hooks/use-controllable"
 
 export interface RateProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
   value?: number
