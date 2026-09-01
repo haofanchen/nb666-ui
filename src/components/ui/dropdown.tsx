@@ -53,10 +53,12 @@ function DropdownMenuItemView({ item, onSelect, closeAll }: DropdownMenuItemView
           <ChevronRight className="size-3.5 text-muted-foreground" />
         </button>
         {subOpen && (
-          <div className="absolute left-full top-0 z-50 ml-1 min-w-40 rounded-md border bg-popover p-1 shadow-card-lg">
-            {item.children!.map((child) => (
-              <DropdownMenuItemView key={child.key} item={child} onSelect={onSelect} closeAll={closeAll} />
-            ))}
+          <div className="absolute left-full top-0 z-50 pl-1">
+            <div className="min-w-40 rounded-md border bg-popover p-1 shadow-card-lg">
+              {item.children!.map((child) => (
+                <DropdownMenuItemView key={child.key} item={child} onSelect={onSelect} closeAll={closeAll} />
+              ))}
+            </div>
           </div>
         )}
       </div>
@@ -103,12 +105,12 @@ export function Dropdown({
 
   const placementClass =
     placement === "bottom-end"
-      ? "left-auto right-0 top-full mt-1"
+      ? "left-auto right-0 top-full pt-1"
       : placement === "top-start"
-        ? "bottom-full left-0 mb-1"
+        ? "bottom-full left-0 pb-1"
         : placement === "top-end"
-          ? "bottom-full left-auto right-0 mb-1"
-          : "left-0 top-full mt-1"
+          ? "bottom-full left-auto right-0 pb-1"
+          : "left-0 top-full pt-1"
 
   return (
     <div
@@ -119,10 +121,12 @@ export function Dropdown({
     >
       {React.cloneElement(children, childProps as React.Attributes)}
       {open && (
-        <div className={cn("absolute z-50 min-w-40 rounded-md border bg-popover p-1 shadow-card-lg", placementClass)}>
-          {menu.map((item) => (
-            <DropdownMenuItemView key={item.key} item={item} onSelect={onSelect} closeAll={() => setOpen(false)} />
-          ))}
+        <div className={cn("absolute z-50", placementClass)}>
+          <div className="min-w-40 rounded-md border bg-popover p-1 shadow-card-lg">
+            {menu.map((item) => (
+              <DropdownMenuItemView key={item.key} item={item} onSelect={onSelect} closeAll={() => setOpen(false)} />
+            ))}
+          </div>
         </div>
       )}
     </div>

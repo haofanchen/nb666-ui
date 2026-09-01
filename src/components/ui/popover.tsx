@@ -1,6 +1,5 @@
 import * as React from "react"
 import { cn } from "../../lib/utils"
-import { overlayPlacement } from "../../lib/styles"
 import { useClickOutside } from "../../hooks/use-click-outside"
 
 export interface PopoverProps {
@@ -34,6 +33,13 @@ export function Popover({
         }
       : undefined
 
+  const bridgePlacement = {
+    top: "bottom-full left-1/2 pb-2 -translate-x-1/2",
+    bottom: "top-full left-1/2 pt-2 -translate-x-1/2",
+    left: "right-full top-1/2 pr-2 -translate-y-1/2",
+    right: "left-full top-1/2 pl-2 -translate-y-1/2",
+  } as const
+
   return (
     <div
       ref={ref}
@@ -43,15 +49,11 @@ export function Popover({
     >
       {React.cloneElement(children, childProps as React.Attributes)}
       {open && (
-        <div
-          className={cn(
-            "absolute z-50 w-64 rounded-lg border bg-popover p-4 text-sm shadow-card-lg",
-            overlayPlacement[placement],
-            className,
-          )}
-        >
-          {title != null && <div className="mb-2 font-medium">{title}</div>}
-          <div className="text-muted-foreground">{content}</div>
+        <div className={cn("absolute z-50", bridgePlacement[placement])}>
+          <div className={cn("w-64 rounded-lg border bg-popover p-4 text-sm shadow-card-lg", className)}>
+            {title != null && <div className="mb-2 font-medium">{title}</div>}
+            <div className="text-muted-foreground">{content}</div>
+          </div>
         </div>
       )}
     </div>
